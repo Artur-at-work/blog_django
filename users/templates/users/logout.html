@@ -1,0 +1,14 @@
+{% extends "blog/base.html" %}
+
+{%  block content %}
+    <div class="content-section">
+       
+        <div class="border-top pt-3">
+            <small class="text-muted">
+                Logged Out successfully <a class="ml-2" href="{% url 'blog-home' %}">Main Page</a>
+            </small>
+
+        </div>
+    </div>
+
+{% endblock content%}
