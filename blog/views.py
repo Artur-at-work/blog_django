@@ -26,6 +26,7 @@ class PostListView(ListView):
     template_name = 'blog/home.html'
     context_object_name = 'posts_var'
     ordering =['-date_posted']
+    paginate_by = 3
 
 class PostDetailView(DetailView):
     model = Post
